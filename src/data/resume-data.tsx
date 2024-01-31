@@ -28,8 +28,8 @@ export const RESUME_DATA = {
     "Front End Developer committed to creating polished products with a keen eye for precision",
   summary:
     "As a versatile professional, I mentor at Bangkit Academy, freelance as a Web App Developer, and work full-time as a Front-End Developer. With a strong background in Android app development, I bring a unique perspective to my freelance projects, transforming ideas into intuitive mobile applications. My expertise in Kotlin, Flutter, and Android Studio ensures the creation of visually appealing apps tailored to clients' needs. In my role as a Front-End Developer, I excel in crafting captivating user experiences through clean and efficient code. Proficient in HTML, CSS, and JavaScript/TypeScript, along with hands-on experience in frameworks like React and Svelte, I deliver dynamic and responsive web solutions that leave a lasting impact. Open to new challenges, I am eager for opportunities that foster both my development and mentoring skills. Feel free to reach out for exciting projects or ideas. Let's collaborate to make a meaningful impact in the tech world!",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "http://api.linkedin.com/v1/people/wayanpande/picture-url",
+  personalWebsiteUrl: "",
   contact: {
     email: "yande554@gmail.com",
     tel: "+6282121097752",
