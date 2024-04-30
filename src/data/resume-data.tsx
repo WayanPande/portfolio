@@ -70,7 +70,7 @@ export const RESUME_DATA = {
     {
       company: "Avatar Solutions",
       link: "https://parabol.co",
-      badges: [],
+      badges: ["On Site"],
       title: "Front End Developer",
       logo: ParabolLogo,
       start: "Feb 2023",
