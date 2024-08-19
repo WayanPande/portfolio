@@ -1,23 +1,5 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { ClevertechLogo, JojoMobileLogo, ParabolLogo } from "@/images/logos";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "I Wayan Pande Putra Yudha",
@@ -25,14 +7,15 @@ export const RESUME_DATA = {
   location: "Bali, Indonesia",
   locationLink: "https://www.google.com/maps/place/bali",
   about:
-    "Front End Developer committed to creating polished products with a keen eye for precision",
+    "Experienced front-end developer with a strong background in Typescript, React, Next.js, and other modern web technologies. Passionate about building responsive and user-friendly web applications.",
   summary:
     "As a versatile professional, I mentor at Bangkit Academy, freelance as a Web App Developer, and work full-time as a Front-End Developer. With a strong background in Android app development, I bring a unique perspective to my freelance projects, transforming ideas into intuitive mobile applications. My expertise in Kotlin, Flutter, and Android Studio ensures the creation of visually appealing apps tailored to clients' needs. In my role as a Front-End Developer, I excel in crafting captivating user experiences through clean and efficient code. Proficient in HTML, CSS, and JavaScript/TypeScript, along with hands-on experience in frameworks like React and Svelte, I deliver dynamic and responsive web solutions that leave a lasting impact. Open to new challenges, I am eager for opportunities that foster both my development and mentoring skills. Feel free to reach out for exciting projects or ideas. Let's collaborate to make a meaningful impact in the tech world!",
-  avatarUrl: "http://api.linkedin.com/v1/people/wayanpande/picture-url",
+  avatarUrl:
+    "https://dicoding-web-img.sgp1.digitaloceanspaces.com/original/jobs/dos:togami123_photo_290723100028.jpg",
   personalWebsiteUrl: "",
   contact: {
     email: "yande554@gmail.com",
-    tel: "+6282121097752",
+    tel: "6282121097752",
     social: [
       {
         name: "GitHub",
@@ -69,18 +52,18 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Avatar Solutions",
-      link: "https://parabol.co",
+      link: "https://www.avatarsolution.com/",
       badges: ["On Site"],
       title: "Front End Developer",
       logo: ParabolLogo,
       start: "Feb 2023",
       end: "Present",
       description:
-        "Legacy code maintenance by working with older codebases to fix issues, update designs, and optimize performance. Collaborated with cross-functional teams to implement responsive designs and front-end solutions for various client projects. Developed and maintained internal reusable front-end components using React.js, resulting in a more efficient development process.",
+        "Completed comprehensive IT solutions, including admin dashboards and real-time management systems. Integrated multiple payment gateways and maintained internal reporting tools. Established seamless integration with existing systems and increased operational efficiency. Accelerated CI/CD processes by 40% for some old projects.",
     },
     {
       company: "Bangkit Academy 2023 by Google, GoTo, Traveloka",
-      link: "https://clevertech.biz",
+      link: "https://grow.google/intl/id_id/bangkit/?tab=machine-learning",
       badges: ["Remote"],
       title: "Android Learning Path Mentor",
       logo: ClevertechLogo,
@@ -91,12 +74,12 @@ export const RESUME_DATA = {
     },
     {
       company: "Freelance Developer",
-      link: "https://bsgroup.eu/",
-      badges: [],
+      link: "#",
+      badges: ["Remote"],
       title: "Android & Web Developer",
       logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      start: "Aug 2022",
+      end: "Present",
       description:
         "Collaborated with clients to understand project requirements, scope, and deliverables. Develop and Integrated RESTful APIs and backend services to fetch and display dynamic content in apps.",
     },
@@ -110,6 +93,8 @@ export const RESUME_DATA = {
     "SolidJS",
     "Docker",
     "WebSocket",
+    "PHP",
+    "Laravel",
     "Git",
   ],
   projects: [
@@ -118,9 +103,8 @@ export const RESUME_DATA = {
       techStack: ["Final Project", "Android", "Kotlin"],
       description:
         "An application that recommend people a tourist destination in order to help those people to heal based on their preferences.",
-      logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
+        label: "Heal & Go",
         href: "https://github.com/C22-PS165-Heal-Go",
       },
     },
@@ -128,144 +112,100 @@ export const RESUME_DATA = {
       title: "KatuturangSatwa",
       techStack: ["Freelance", "Dart", "Flutter"],
       description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
+        "Android apps that used for users to read a traditional story book from Bali",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "github.com/katuturangsatwa-apps",
+        href: "https://github.com/WayanPande/katuturangsatwa-apps",
       },
     },
     {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
+      title: "Ngurah Rai Taxi (Airport)",
       techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "Next.js",
+        "WebSocket",
+        "Typescript",
+        "Shadcn UI",
+        "TailwindCSS",
+        "Tanstack Query",
       ],
       description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
+        "Admin dashboard with reporting and CRUD functionalities for drivers and cashiers. Implemented a real-time taxi management system using WebSockets, enabling the tracking and updating of all taxis on shift for the day",
     },
     {
-      title: "Evercast",
+      title: "Desa Mambal Project",
       techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "Next.js",
+        "Typescript",
+        "Chakra UI",
+        "TailwindCSS",
+        "Tanstack Query",
       ],
       description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+        "Admin dashboard with reporting, population management, and correspondence functionalities",
+    },
+    {
+      title: "Atix Booking",
+      techStack: [
+        "Next.js",
+        "Javascript",
+        "Chakra UI",
+        "Framer Motion",
+        "Xendit",
+        "BPD Bali Payment",
+      ],
+      description:
+        "Activity destination booking web with around 50 of the most popular activity destinations in Bali",
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "Atix Bali",
+        href: "https://atixbali.com/",
       },
     },
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Alam Tirta Booking",
+      techStack: [
+        "Next.js",
+        "Javascript",
+        "Shadcn UI",
+        "Xendit",
+        "TailwindCSS",
+        "Tanstack Query",
+      ],
       description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
+        "Activity destination booking web for Alam Tirta, one of the most popular outdoor activity destinations in Bali",
       link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
+        label: "Alam Tirta",
+        href: "https://alamtirta.com/",
       },
     },
     {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Gianyar Tourism Tickets",
+      techStack: [
+        "Svelte",
+        "SvelteKit",
+        "Typescript",
+        "daisyUI",
+        "Xendit",
+        "TailwindCSS",
+        "BPD Bali Payment",
+      ],
       description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
+        "Booking tickets for Gianyar Regency, with around 10 of the most popular tourist attractions in Gianyar Bali and collaborated with the local goverment",
       link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
+        label: "Gianyar Tourism Tickets",
+        href: "https://gianyartourismticket.com",
       },
     },
     {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "DGnius (Go Clinic)",
+      techStack: [
+        "Next.js",
+        "Typescript",
+        "Chakra UI",
+        "TailwindCSS",
+        "Tanstack Query",
+      ],
       description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+        "Admin dashboard for a clinic frenchise in Indonesia with reporting, CRUD, and employee management functionalities",
     },
   ],
 } as const;
