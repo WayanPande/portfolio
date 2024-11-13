@@ -32,7 +32,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Udayana University",
-      degree: "Bachelor's Degree in Computer Science",
+      degree: "Bachelor's Degree in Computer Science, GPA: 3.92/4.00",
       start: "2019",
       end: "2023",
     },
@@ -154,14 +154,14 @@ export const RESUME_DATA = {
         "BPD Bali Payment",
       ],
       description:
-        "Activity destination booking web with around 50 of the most popular activity destinations in Bali",
+        "Activity destination booking web with around 50 of the most popular activity destinations in Bali with multiple payment methods support",
       link: {
         label: "Atix Bali",
         href: "https://atixbali.com/",
       },
     },
     {
-      title: "Alam Tirta Booking",
+      title: "Alam Tirta",
       techStack: [
         "Next.js",
         "Javascript",
@@ -171,7 +171,7 @@ export const RESUME_DATA = {
         "Tanstack Query",
       ],
       description:
-        "Activity destination booking web for Alam Tirta, one of the most popular outdoor activity destinations in Bali",
+        "Activity destination booking web & landing page for Alam Tirta, one of the most popular outdoor activity destinations in Bali",
       link: {
         label: "Alam Tirta",
         href: "https://alamtirta.com/",
@@ -189,7 +189,7 @@ export const RESUME_DATA = {
         "BPD Bali Payment",
       ],
       description:
-        "Booking tickets for Gianyar Regency, with around 10 of the most popular tourist attractions in Gianyar Bali and collaborated with the local goverment",
+        "Booking tickets for Gianyar Regency, with around 10 of the most popular tourist attractions in Gianyar Bali and collaborated with the local goverment. Also with multiple payment methods support",
       link: {
         label: "Gianyar Tourism Tickets",
         href: "https://gianyartourismticket.com",
@@ -206,6 +206,38 @@ export const RESUME_DATA = {
       ],
       description:
         "Admin dashboard for a clinic frenchise in Indonesia with reporting, CRUD, and employee management functionalities",
+    },
+    {
+      title: "Global Forex Broker (PCX) Landing Page",
+      techStack: [
+        "Next.js",
+        "Typescript",
+        "Shadcn UI",
+        "TailwindCSS",
+        "Tanstack Query",
+      ],
+      description:
+        "A Landing Page for Global Forex Broker (PCX) based on Dubai, with a real time market data & multiple language support",
+      link: {
+        label: "PCX Landing Page",
+        href: "https://pcxfx.com/",
+      },
+    },
+    {
+      title: "Reporting Tools for BPD Bali Bank",
+      techStack: ["PHP", "Laravel", "Bootstrap CSS"],
+      description:
+        "Collaborated with the BPD Bali team to maintain their internal reporting tools also made necessary updates and improvements to enhance the reporting capabilities",
+    },
+    {
+      title: "Usability Testing Chrome Extension",
+      techStack: ["Javascript", "React", "TailwindCSS", "Webpack"],
+      description:
+        "A Chrome extension to help with usability testing, with a simple UI and a set of pre-defined scenarios",
+      link: {
+        label: "Usability testing extension",
+        href: "https://github.com/WayanPande/usability-testing-extension",
+      },
     },
   ],
 } as const;
