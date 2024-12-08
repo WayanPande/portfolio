@@ -1,7 +1,65 @@
 import { ClevertechLogo, JojoMobileLogo, ParabolLogo } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
-export const RESUME_DATA = {
+type SocialLink = {
+  name: string;
+  url: string;
+  icon: any;
+};
+
+type Contact = {
+  email: string;
+  tel: string;
+  social: SocialLink[];
+};
+
+type Education = {
+  school: string;
+  degree: string;
+  start: string;
+  end?: string;
+};
+
+type WorkExperience = {
+  company: string;
+  link?: string;
+  badges: string[];
+  title: string;
+  logo: any;
+  start: string;
+  end?: string;
+  description: string;
+};
+
+type ProjectLink = {
+  label: string;
+  href: string;
+};
+
+type Project = {
+  title: string;
+  techStack: string[];
+  description: string;
+  link?: ProjectLink;
+};
+
+export type UserProfile = {
+  name: string;
+  initials: string;
+  location: string;
+  locationLink: string;
+  about: string;
+  summary: string;
+  avatarUrl: string;
+  personalWebsiteUrl: string;
+  contact: Contact;
+  education: Education[];
+  work: WorkExperience[];
+  skills: string[];
+  projects: Project[];
+};
+
+export const RESUME_DATA: UserProfile = {
   name: "I Wayan Pande Putra Yudha",
   initials: "WP",
   location: "Bali, Indonesia",
@@ -74,7 +132,6 @@ export const RESUME_DATA = {
     },
     {
       company: "Freelance Developer",
-      link: "#",
       badges: ["Remote"],
       title: "Android & Web Developer",
       logo: JojoMobileLogo,
