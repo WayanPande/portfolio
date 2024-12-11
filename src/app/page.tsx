@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container min-h-svh">
+    <main className="container min-h-svh pb-20">
       <BackgroundLines className="flex h-svh w-full flex-col items-center justify-center bg-transparent px-4">
         <h2 className="relative z-20 bg-gradient-to-b from-neutral-900 to-neutral-700 bg-clip-text py-2 text-center font-sans text-2xl font-bold tracking-tight text-transparent dark:from-neutral-600 dark:to-white md:py-10 md:text-4xl lg:text-7xl">
           I Wayan Pande Putra Yudha.
