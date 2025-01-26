@@ -5,6 +5,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
+  experimental: {
+    reactCompiler: true,
+  },
 };
 
 module.exports = nextConfig;
