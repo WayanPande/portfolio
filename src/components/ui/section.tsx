@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface BadgeProps extends React.ComponentProps<"section"> {}
 
 export function Section({ className, ...props }: BadgeProps) {
   return (
