@@ -166,7 +166,7 @@ export const CarrierTimeline = () => {
           <h2 className="mb-8">
             Here are some of my favorite projects I worked on:
           </h2>
-          <div className="h-[40rem] w-full">
+          <div className="h-160 w-full">
             <LayoutGrid cards={cards2023} />
           </div>
         </div>
@@ -184,7 +184,7 @@ export const CarrierTimeline = () => {
             impact. 🌍🚀 Working alongside a fantastic team, I embraced new
             responsibilities, pushed boundaries, and celebrated big wins! 🏆✨
           </h1>
-          <div className="h-[40rem] w-full">
+          <div className="h-160 w-full">
             <AnimatedCardsDeck datas={testimonials} autoplay />
           </div>
         </div>

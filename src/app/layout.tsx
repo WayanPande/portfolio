@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body>
         <Navbar />
-        <main className="bg-grid-small-black/[0.2] dark:bg-grid-small-white/[0.2]">
-          <div className="pointer-events-none fixed inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)] dark:bg-black"></div>
+        <main className="bg-grid-small-black/20 dark:bg-grid-small-white/20">
+          <div className="pointer-events-none fixed inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_60%,black)] dark:bg-black"></div>
           {children}
         </main>
       </body>
