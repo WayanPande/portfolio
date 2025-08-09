@@ -3,7 +3,6 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { BackgroundLines } from "@/components/background-lines";
 import ContactMeSection from "@/components/ContactMeSection";
 import CarrierTimeline from "@/components/CarrierTimeline";
-import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -28,7 +27,6 @@ export default function Page() {
           creating efficient and user-friendly solutions.
         </p>
       </BackgroundLines>
-      <Button variant="secondary">test</Button>
       <CarrierTimeline />
       <ContactMeSection />
     </main>
