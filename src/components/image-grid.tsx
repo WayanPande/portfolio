@@ -66,7 +66,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
       height="500"
       width="500"
       className={cn(
-        "absolute inset-0 h-full w-full object-cover object-left-top transition duration-200",
+        "absolute inset-0 h-full w-full object-cover object-top-left transition duration-200",
       )}
       alt="thumbnail"
     />
@@ -75,7 +75,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
   return (
-    <div className="relative z-[60] flex h-full w-full flex-col justify-end rounded-lg bg-transparent shadow-2xl">
+    <div className="relative z-60 flex h-full w-full flex-col justify-end rounded-lg bg-transparent shadow-2xl">
       <motion.div
         initial={{
           opacity: 0,
@@ -103,7 +103,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative z-[70] px-8 pb-4"
+        className="relative z-70 px-8 pb-4"
       >
         {selected?.content}
       </motion.div>

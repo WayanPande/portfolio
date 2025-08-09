@@ -25,7 +25,7 @@ export const ContactMeSection = () => {
   return (
     <section className="sm:pt-32 xl:pt-20">
       <HeroHighlight containerClassName="overflow-hidden rounded-3xl border hidden sm:flex">
-        <div className="flex h-[40rem] flex-col items-center justify-center">
+        <div className="flex h-160 flex-col items-center justify-center">
           <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base">
             Let&apos;s talk about your project ideas.
           </p>
@@ -39,7 +39,7 @@ export const ContactMeSection = () => {
           </div>
         </div>
       </HeroHighlight>
-      <div className="flex h-[40rem] flex-col items-center justify-center sm:hidden">
+      <div className="flex h-160 flex-col items-center justify-center sm:hidden">
         <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  ">
           Let&apos;s talk about your project ideas.
         </p>
