@@ -5,8 +5,12 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
+  reactCompiler: true,
   experimental: {
-    reactCompiler: true,
+    turbopackFileSystemCacheForDev: true,
+  },
+  turbopack: {
+    root: "./",
   },
 };
 
