@@ -20,6 +20,7 @@ type LinkPreviewProps = {
   height?: number;
   quality?: number;
   layout?: string;
+  onClick?: () => void;
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -35,6 +36,7 @@ export const LinkPreview = ({
   layout = "fixed",
   isStatic = false,
   imageSrc = "",
+  onClick,
 }: LinkPreviewProps) => {
   let src;
   if (!isStatic) {
@@ -130,6 +132,7 @@ export const LinkPreview = ({
                 style={{
                   x: translateX,
                 }}
+                onClick={onClick}
               >
                 <Link
                   href={url}

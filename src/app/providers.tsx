@@ -18,7 +18,7 @@ export function PHProvider({ children }: { children: React.ReactNode }) {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (pathname && posthog._loaded()) {
+    if (pathname) {
       posthog.capture("$pageview", {
         $current_url: pathname + searchParams.toString(),
       });

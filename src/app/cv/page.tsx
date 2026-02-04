@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import { LinkPreview } from "@/components/link-preview";
+import { SocialLinkButton } from "@/components/SocialLinkButton"; // Import the new component
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | CV`,
@@ -64,17 +65,12 @@ export default function Page() {
                 </Button>
               ) : null}
               {RESUME_DATA.contact.social.map((social) => (
-                <Button
+                <SocialLinkButton
                   key={social.name}
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={social.url}>
-                    <social.icon className="size-4" />
-                  </a>
-                </Button>
+                  name={social.name}
+                  url={social.url}
+                  icon={social.icon}
+                />
               ))}
             </div>
             <div className="text-muted-foreground hidden flex-col gap-x-1 font-mono text-sm print:flex">

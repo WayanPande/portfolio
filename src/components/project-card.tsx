@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardHeader,
@@ -7,6 +9,7 @@ import {
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { LinkPreview } from "./link-preview";
+import posthog from "posthog-js";
 
 interface Props {
   title: string;
@@ -17,7 +20,7 @@ interface Props {
 
 export function ProjectCard({ title, description, tags, link }: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+    <Card className="border-muted flex flex-col overflow-hidden border p-3">
       <CardHeader className="">
         <div className="space-y-1">
           <CardTitle className="text-base">
@@ -25,6 +28,12 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               <LinkPreview
                 url={link}
                 className="inline-flex items-center gap-1 hover:underline"
+                onClick={() => {
+                  posthog.capture("project_link_clicked", {
+                    project_title: title,
+                    project_url: link,
+                  });
+                }}
               >
                 {title}{" "}
                 <span className="size-1 rounded-full bg-green-500"></span>
@@ -57,3 +66,4 @@ export function ProjectCard({ title, description, tags, link }: Props) {
     </Card>
   );
 }
+

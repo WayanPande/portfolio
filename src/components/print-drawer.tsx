@@ -12,12 +12,13 @@ import {
   DrawerFooter,
   DrawerClose,
 } from "./ui/drawer";
+import posthog from "posthog-js";
 
 export const PrintDrawer = () => {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button className="fixed bottom-4 right-4 size-16 rounded-full shadow-2xl print:hidden">
+        <Button className="fixed right-4 bottom-4 size-16 rounded-full shadow-2xl print:hidden">
           <PrinterIcon />
         </Button>
       </DrawerTrigger>
@@ -29,7 +30,14 @@ export const PrintDrawer = () => {
           </DrawerHeader>
           <div className="p-4 pb-0"></div>
           <DrawerFooter>
-            <Button onClick={() => window.print()}>Print</Button>
+            <Button
+              onClick={() => {
+                posthog.capture("cv_printed");
+                window.print();
+              }}
+            >
+              Print
+            </Button>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>
