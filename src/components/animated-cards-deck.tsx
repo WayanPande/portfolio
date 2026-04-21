@@ -1,7 +1,7 @@
 "use client";
 import { ArrowLeftCircleIcon, ArrowRightCircle } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
 
 type CardsDeck = {
@@ -76,7 +76,7 @@ export const AnimatedCardsDeck = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <Image
+                  <img
                     src={data.src}
                     alt={data.name}
                     width={500}

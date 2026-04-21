@@ -1,6 +1,6 @@
 "use client";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
-import Image from "next/image";
+
 import { encode } from "qss";
 import React from "react";
 import {
@@ -9,7 +9,7 @@ import {
   useMotionValue,
   useSpring,
 } from "motion/react";
-import Link from "next/link";
+
 import { cn } from "@/lib/utils";
 
 type LinkPreviewProps = {
@@ -80,12 +80,10 @@ export const LinkPreview = ({
     <>
       {isMounted ? (
         <div className="hidden">
-          <Image
+          <img
             src={src}
             width={width}
             height={height}
-            quality={quality}
-            priority={true}
             alt="hidden image"
           />
         </div>
@@ -134,22 +132,20 @@ export const LinkPreview = ({
                 }}
                 onClick={onClick}
               >
-                <Link
+                <a
                   href={url}
                   target="_blank"
                   className="block rounded-xl border-2 border-transparent bg-white p-1 shadow-sm hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
                 >
-                  <Image
+                  <img
                     src={isStatic ? imageSrc : src}
                     width={width}
                     height={height}
-                    quality={quality}
-                    priority={true}
                     className="rounded-lg"
                     alt="preview image"
                   />
-                </Link>
+                </a>
               </motion.div>
             )}
           </AnimatePresence>

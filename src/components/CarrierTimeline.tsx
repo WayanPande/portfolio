@@ -85,31 +85,31 @@ const cards2023: Card[] = [
     id: "5c43e252-5823-4313-af9b-56f0af1c11f3",
     content: <MambalContent />,
     className: "col-span-1",
-    thumbnail: Mambal.src,
+    thumbnail: Mambal,
   },
   {
     id: "06839c62-68d7-42d2-8c81-3321562d97ea",
     content: <GianyarContent />,
     className: "col-span-1",
-    thumbnail: GianyarTourism.src,
+    thumbnail: GianyarTourism,
   },
   {
     id: "2efd4ce3-f809-4c56-969e-8e513946b68d",
     content: <AlamTirtaContent />,
     className: "col-span-1",
-    thumbnail: AlamTirta.src,
+    thumbnail: AlamTirta,
   },
   {
     id: "859c43a7-d0eb-4795-849c-fbcdd08bd616",
     content: <NgurahRaiContent />,
     className: "col-span-1",
-    thumbnail: NgurahRai.src,
+    thumbnail: NgurahRai,
   },
   {
     id: "12179c1a-b73d-4f0e-8a83-173ae26a33c7",
     content: <KaiContent />,
     className: "col-span-1",
-    thumbnail: Kai.src,
+    thumbnail: Kai,
   },
 ];
 
@@ -119,34 +119,34 @@ const testimonials = [
       "A admin dashboard for IPOS, a popular POS platform in Bali, Indonesia.",
     name: "IPOS Admin",
     designation: "",
-    src: Ipos.src,
+    src: Ipos,
   },
   {
     quote:
       "A Landing Page for Global Forex Broker (PCX) based on Dubai, with a real time market data & multiple language support.",
     name: "Global Forex Broker (PCX)",
     designation: "Landing Page",
-    src: Pcfx.src,
+    src: Pcfx,
   },
   {
     quote: "A Property Management Landing Page for a startup in Indonesia.",
     name: "Gary",
     designation: "Landing Page",
-    src: Gary.src,
+    src: Gary,
   },
   {
     quote:
       " A Campaign Landing Page for one of Governor of Jakarta Candidate Election 2024 in Indonesia.",
     name: "Jakarta Menyala",
     designation: "Landing Page",
-    src: JakartaMenyala.src,
+    src: JakartaMenyala,
   },
   {
     quote:
       "A Landing Page for Atix.id, a popular e-ticketing platform in Bali, Indonesia.",
     name: "Atix.id",
     designation: "Landing Page",
-    src: AtixLandingPage.src,
+    src: AtixLandingPage,
   },
 ];
 

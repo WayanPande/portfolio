@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wayanpande.github.io/portfolio/sitemap.xml
