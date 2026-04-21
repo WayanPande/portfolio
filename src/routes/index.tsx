@@ -1,15 +1,42 @@
-import { Metadata } from "next";
+import { createFileRoute } from '@tanstack/react-router'
 import { RESUME_DATA } from "@/data/resume-data";
 import { BackgroundLines } from "@/components/background-lines";
 import ContactMeSection from "@/components/ContactMeSection";
 import CarrierTimeline from "@/components/CarrierTimeline";
+import { useEffect } from 'react';
 
-export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
-};
+export const Route = createFileRoute('/')({
+  component: Index,
+})
 
-export default function Page() {
+function Index() {
+  useEffect(() => {
+    document.title = `${RESUME_DATA.name} | ${RESUME_DATA.about}`;
+    
+    const updateMeta = (name: string, content: string, isProperty = false) => {
+      const selector = isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement('meta');
+        if (isProperty) {
+          meta.setAttribute('property', name);
+        } else {
+          meta.setAttribute('name', name);
+        }
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+
+    updateMeta('description', RESUME_DATA.summary);
+    updateMeta('og:title', `${RESUME_DATA.name} | ${RESUME_DATA.about}`, true);
+    updateMeta('og:description', RESUME_DATA.summary, true);
+    updateMeta('og:url', 'https://wayanpande.github.io/portfolio/', true);
+    updateMeta('twitter:title', `${RESUME_DATA.name} | ${RESUME_DATA.about}`, true);
+    updateMeta('twitter:description', RESUME_DATA.summary, true);
+    updateMeta('twitter:url', 'https://wayanpande.github.io/portfolio/', true);
+  }, []);
+
   return (
     <main className="container min-h-svh pb-20">
       <BackgroundLines className="flex h-svh w-full flex-col items-center justify-center bg-transparent px-4">
@@ -30,5 +57,5 @@ export default function Page() {
       <CarrierTimeline />
       <ContactMeSection />
     </main>
-  );
+  )
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+
 import { TypewriterEffectSmooth } from "./typewriter-effect";
 import { Button } from "./ui/button";
 import { HeroHighlight } from "./hero-highlight";
@@ -34,7 +34,7 @@ export const ContactMeSection = () => {
           </p>
           <TypewriterEffectSmooth words={words} />
           <div className="flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
-            <Link
+            <a
               href={"mailto:yande554@gmail.com"}
               target="_blank"
               onClick={() => {
@@ -46,7 +46,7 @@ export const ContactMeSection = () => {
               <Button className="h-10 w-40 rounded-xl border border-transparent bg-black text-sm text-white dark:border-white">
                 Contact me
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </HeroHighlight>
@@ -56,7 +56,7 @@ export const ContactMeSection = () => {
         </p>
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
-          <Link
+          <a
             href={"mailto:yande554@gmail.com"}
             target="_blank"
             onClick={() => {
@@ -68,7 +68,7 @@ export const ContactMeSection = () => {
             <Button className="h-10 w-40 rounded-xl border border-transparent bg-black text-sm text-white dark:border-white">
               Contact me
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
